@@ -1,0 +1,19 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Commit message format: type(scope): description
+# Types: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert
+PATTERN="^(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert)(\(.+\))?: .+"
+
+if ! grep -qE "$PATTERN" "$1"; then
+  echo "ERROR: Commit message does not follow the format:"
+  echo "  <type>(<scope>): <description>"
+  echo ""
+  echo "Types: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert"
+  echo ""
+  echo "Examples:"
+  echo "  feat(auth): add login page"
+  echo "  fix: resolve null pointer exception"
+  echo "  docs: update README"
+  exit 1
+fi
