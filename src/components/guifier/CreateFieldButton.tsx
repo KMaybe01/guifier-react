@@ -1,13 +1,12 @@
 import {
-  PlusOutlined,
-  OrderedListOutlined,
+  CheckOutlined,
   FontSizeOutlined,
   NumberOutlined,
-  CheckOutlined,
+  OrderedListOutlined,
+  PlusOutlined,
 } from '@ant-design/icons'
-import { Dropdown, Button } from 'antd'
-
 import type { MenuProps } from 'antd'
+import { Button, Dropdown } from 'antd'
 
 export type CreateFieldButtonOptions = 'object' | 'array' | 'string' | 'number' | 'boolean'
 

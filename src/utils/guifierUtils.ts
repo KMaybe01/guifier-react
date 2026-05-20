@@ -1,6 +1,6 @@
 import { TomlDocument, TomlFormat, stringify as tomlStringify } from '@decimalturn/toml-patch'
-import { XMLParser, XMLBuilder } from 'fast-xml-parser'
-import { load as loadYaml, dump as dumpYaml } from 'js-yaml'
+import { XMLBuilder, XMLParser } from 'fast-xml-parser'
+import { dump as dumpYaml, load as loadYaml } from 'js-yaml'
 import lodash from 'lodash'
 
 export type GuifierData = Record<string, unknown> | Array<unknown>

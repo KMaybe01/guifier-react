@@ -30,7 +30,9 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 py-6">
-        <Title level={2} className="text-center mb-6">Guifier</Title>
+        <Title level={2} className="text-center mb-6">
+          Guifier
+        </Title>
 
         <Tabs
           activeKey={activeTab}

@@ -8,13 +8,13 @@ interface DateFieldProps {
 
 export default function DateField({ value, onChange }: DateFieldProps) {
   const formatDate = (d: Date): string => {
-    if (isNaN(d.getTime())) return ''
+    if (Number.isNaN(d.getTime())) return ''
     return d.toISOString().slice(0, 10)
   }
 
   const parseDate = (str: string): Date => {
     const date = new Date(str)
-    return isNaN(date.getTime()) ? value : date
+    return Number.isNaN(date.getTime()) ? value : date
   }
 
   return (

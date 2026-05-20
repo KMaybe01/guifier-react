@@ -1,5 +1,0 @@
-dist
-node_modules
-*.local
-coverage
-pnpm-lock.yaml

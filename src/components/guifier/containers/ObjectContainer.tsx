@@ -1,11 +1,10 @@
-import { DeleteOutlined, FontSizeOutlined, NumberOutlined, CheckOutlined } from '@ant-design/icons'
-import { Card, Button, Typography, Empty } from 'antd'
+import { CheckOutlined, DeleteOutlined, FontSizeOutlined, NumberOutlined } from '@ant-design/icons'
+import { Button, Card, Empty, Typography } from 'antd'
 
 import { cn, isContainerValue, isPlainObject } from '@/utils/cn'
 import type { GuifierData } from '@/utils/guifierUtils'
-
-import ArrayContainer from '../containers/ArrayContainer'
 import CreateFieldButton, { type CreateFieldButtonOptions } from '../CreateFieldButton'
+import ArrayContainer from '../containers/ArrayContainer'
 import Field from '../fields/Field'
 
 const { Text } = Typography
